@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Linkedln</title>
+  </head>
+
+  <body>
+    <!-- body -->
+    <div class="relative">
+      <!-- Navbar start -->
+      <nav class="fixed z-50 w-full bg-[#fff] py-2 border">
+        <div
+          class="container 2xl:px-40 flex items-center lg:justify-between justify-center lg:gap-6 mx-auto"
+        >
+          <!-- navbar logo -->
+          <div class="flex items-center gap-2">
+            <a href="#">
+              <img
+                class="w-8 h-8"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                alt=""
+              />
+            </a>
+            <div
+              class="hidden lg:flex items-center relative w-70 h-8 bg-[rgb(237,243,248)] rounded px-10"
+            >
+              <img
+                class="absolute left-4 w-4 h-4"
+                src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png"
+                alt=""
+              />
+              <input
+                class="bg-[rgb(237,243,248)] w-full outline-0"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <!-- navbar left -->
+          <div class="flex items-center border-r">
+            <a class="lg:w-20 sm:w-12 w-8" href="#">
+              <div class="flex flex-col items-center">
+                <div class="flex justify-center items-center w-6 h-6">
+                  <img
+                    class="w-4 h-4"
+                    src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png"
+                    alt=""
+                  />
+                </div>
+                <span class="hidden lg:flex text-sm text-center">Search</span>
+              </div>
+            </a>
+            <a class="relative lg:w-20 sm:w-12 w-8" href="#">
+              <div class="flex flex-col items-center">
+                <div class="flex justify-center">
+                  <img src="./assets/svgs/home.svg" alt="" />
+                </div>
+                <span class="hidden lg:flex text-center text-sm">Home</span>
+              </div>
+              <!-- <span class="absolute left-0 w-20 h-[2px] bg-black "></span> -->
+            </a>
+            <a class="lg:w-20 sm:w-12 w-8" href="#">
+              <div class="flex flex-col items-center">
+                <div class="flex justify-center">
+                  <img src="./assets/svgs/mynetwork.svg" alt="" />
+                </div>
+                <span class="hidden lg:flex text-center text-gray-500 text-sm"
+                  >My Network</span
+                >
+              </div>
+            </a>
+            <a class="lg:w-20 sm:w-12 w-8" href="#">
+              <div class="flex flex-col items-center">
+                <div class="flex justify-center">
+                  <img src="./assets/svgs/jobs.svg" alt="" />
+                </div>
+                <span class="hidden lg:flex text-center text-gray-500 text-sm"
+                  >Jobs</span
+                >
+              </div>
+            </a>
+            <a class="lg:w-20 sm:w-12 w-8" href="#">
+              <div class="flex flex-col items-center">
+                <div class="flex justify-center">
+                  <img src="./assets/svgs/messaging.svg" alt="" />
+                </div>
+                <span class="hidden lg:flex text-center text-gray-500 text-sm"
+                  >Messaging</span
+                >
+              </div>
+            </a>
+            <a class="lg:w-20 sm:w-12 w-8" href="#">
+              <div class="flex flex-col items-center">
+                <div class="flex justify-center relative w-max">
+                  <img src="./assets/svgs/notification.svg" alt="" /><span
+                    class="absolute flex justify-center items-center w-4 h-4 rounded-full bg-red-600 text-white -top-[3px] -right-[2px]"
+                    >2</span
+                  >
+                </div>
+                <span class="hidden lg:flex text-center text-gray-500 text-sm"
+                  >Notification</span
+                >
+              </div>
+            </a>
+            <a class="lg:w-20 sm:w-12 w-8" href="#">
+              <div class="flex flex-col items-center">
+                <div class="flex justify-center w-6 h-6 rounded-full">
+                  <img
+                    class="rounded-full w-full h-full"
+                    src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                    alt=""
+                  />
+                </div>
+                <span class="hidden lg:flex text-center text-sm">Me</span>
+              </div>
+            </a>
+          </div>
+          <!-- navbar right -->
+          <div class="flex items-center">
+            <a href="" class="lg:w-20 sm:w-12 w-8">
+              <div class="flex flex-col items-center">
+                <div class="flex justify-center w-6 h-6 rounded-full">
+                  <img src="./assets/svgs/forbusiness.svg" alt="" />
+                </div>
+                <span class="hidden lg:flex text-gray-500 text-center text-sm"
+                  >For Business</span
+                >
+              </div>
+            </a>
+            <p
+              class="hidden sm:flex max-w-[130px] text-sm text-center text-[#915907] underline decoration-1"
+            >
+              Ignite your career with Premium
+            </p>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+      <!-- main section -->
+      <div class="bg-[#F4F2EE] pt-24 pb-8">
+        <div
+          class="container 2xl:px-40 px-6 md:px-0 mx-auto flex-col flex md:flex-row gap-6"
+        >
+          <!-- first section -->
+          <div class="lg:w-1/5 md:w-1/3 w-full flex flex-col gap-2">
+            <div class="rounded-md bg-[#fff] border">
+              <img
+                class="h-14 w-full rounded-tl-md rounded-tr-md object-cover"
+                src="https://img.freepik.com/free-photo/laptop-office-plant-black-background-top-view_169016-34505.jpg"
+                alt=""
+              />
+
+              <img
+                class="w-16 h-16 rounded-full mx-auto -mt-8 flex justify-center border-2 border-white"
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                alt=""
+              />
+
+              <div
+                class="flex flex-col justify-center items-center p-6 border-b"
+              >
+                <h2 class="text-lg font-bold">Leyla Ahmadova</h2>
+                <h3 class="text-xs text-gray-500">Front-end developer</h3>
+              </div>
+              <div class="toggleDiv p-3 flex flex-col gap-2">
+                <div class="flex justify-between">
+                  <span class="text-xs text-gray-500 font-semibold"
+                    >Profile viewers</span
+                  >
+                  <span class="text-[#0A66C2] text-xs font-semibold">9045</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-xs text-gray-500 font-semibold"
+                    >Post imperessions</span
+                  >
+                  <span class="text-[#0A66C2] text-xs font-semibold">1569</span>
+                </div>
+              </div>
+              <div class="toggleDiv p-3 flex flex-col gap-2 border-b border-t">
+                <div>
+                  <span class="text-xs text-gray-500"
+                    >Achieve your career goals</span
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-3 h-3"
+                    src="https://media.licdn.com/dms/image/D4E12AQG7lB6U1qfr3g/article-inline_image-shrink_1000_1488/0/1655480610073?e=1727308800&v=beta&t=pxcBZeth7OydiiAlvlMo2ZwZm2S0kmGr8FzuMqo8UuI"
+                    alt=""
+                  />
+                  <span class="text-xs font-medium text-gray-700"
+                    >Try Premium for $0</span
+                  >
+                </div>
+              </div>
+              <div class="toggleDiv flex items-center gap-2 p-3">
+                <img
+                  class="w-3 h-3"
+                  src="./assets/images/bookmark.png"
+                  alt=""
+                />
+                <span class="text-xs text-gray-700 font-medium"
+                  >Saved items</span
+                >
+              </div>
+            </div>
+
+            <div class="toggleDiv bg-white rounded-md border p-3">
+              <div>
+                <span class="text-xs inline-block mb-4">Recent</span>
+                <div class="flex gap-2 items-center mb-2">
+                  <img class="w-3 h-3" src="./assets/images/group.png" alt="" />
+                  <span class="text-xs font-medium text-gray-500"
+                    >JavaScript</span
+                  >
+                </div>
+                <div class="flex gap-2 items-center mb-2">
+                  <img class="w-3 h-3" src="./assets/images/group.png" alt="" />
+                  <span class="text-xs font-medium text-gray-500"
+                    >JavaScript TypeScript...</span
+                  >
+                </div>
+                <div class="flex gap-2 items-center mb-2">
+                  <img class="w-3 h-3" src="./assets/images/group.png" alt="" />
+                  <span class="text-xs font-medium text-gray-500"
+                    >Frontend Developers-HTML,..</span
+                  >
+                </div>
+                <div class="flex gap-2 items-center mb-2">
+                  <img class="w-3 h-3" src="./assets/images/group.png" alt="" />
+                  <span class="text-xs font-medium text-gray-500">Django</span>
+                </div>
+                <div class="flex gap-2 items-center mb-2">
+                  <img class="w-3 h-3" src="./assets/images/group.png" alt="" />
+                  <span class="text-xs font-medium text-gray-500"
+                    >React Developers & ..</span
+                  >
+                </div>
+              </div>
+              <div class="mt-6">
+                <span
+                  class="text-xs inline-block mb-4 text-[#0A66C2] font-medium"
+                  >Groups</span
+                >
+                <div class="flex gap-2 items-center mb-2">
+                  <img class="w-3 h-3" src="./assets/images/group.png" alt="" />
+                  <span class="text-xs font-medium text-gray-500"
+                    >JavaScript</span
+                  >
+                </div>
+                <div class="flex gap-2 items-center mb-2">
+                  <img class="w-3 h-3" src="./assets/images/group.png" alt="" />
+                  <span class="text-xs font-medium text-gray-500"
+                    >JavaScript TypeScript...</span
+                  >
+                </div>
+                <div class="flex gap-2 items-center mb-2">
+                  <img class="w-3 h-3" src="./assets/images/group.png" alt="" />
+                  <span class="text-xs font-medium text-gray-500"
+                    >Frontend Developers-HTML,..</span
+                  >
+                </div>
+                <div class="flex gap-2 items-center mb-2">
+                  <img class="w-3 h-3" src="./assets/images/group.png" alt="" />
+                  <span class="text-xs font-medium text-gray-500">Django</span>
+                </div>
+              </div>
+              <div class="mt-6 flex justify-between">
+                <span class="text-xs text-[#0A66C2] font-medium">Events</span>
+                <img
+                  class="w-3 h-3"
+                  src="https://cdn-icons-png.flaticon.com/512/32/32339.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-2 border-b">
+                <span class="text-xs text-[#0A66C2] font-medium"
+                  >Followed Hashtags</span
+                >
+              </div>
+              <div class="pt-3 flex items-center justify-center">
+                <span class="text-xs text-gray-500 font-medium"
+                  >Discover me</span
+                >
+              </div>
+            </div>
+            <span
+              class="flex md:hidden justify-center cursor-pointer mt-4 font-medium text-md text-gray-700"
+              id="toggleButton"
+              >Show less</span
+            >
+          </div>
+          <!-- second section -->
+          <div class="lg:w-1/2 md:w-2/3 w-full flex flex-col gap-6">
+            <div class="rounded-md p-3 bg-white border">
+              <div class="flex gap-2">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                  alt=""
+                />
+
+                <input
+                  placeholder="Start a post, try writing with AI"
+                  class="placeholder-[rgb(64,64,64)] outline-0 h-12 w-full p-3 rounded-full border-[1px] border-[rgb(182,182,182)]"
+                  type="text"
+                />
+              </div>
+              <div class="flex justify-around mt-3">
+                <div class="flex gap-2 items-center">
+                  <img class="w-4 h-4" src="./assets/images/media.png" alt="" />
+                  <span class="text-md font-medium">Media</span>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img class="w-4 h-4" src="./assets/images/job.png" alt="" />
+                  <span class="text-md font-medium">Job</span>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img
+                    class="w-4 h-4"
+                    src="./assets/images/article.png"
+                    alt=""
+                  />
+                  <span class="text-md font-medium">Write article</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-md bg-white border">
+              <div class="p-3">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-2">
+                    <img
+                      class="w-12 h-12 rounded-full"
+                      src="https://media.licdn.com/dms/image/C4D03AQHFot31JK1Rhw/profile-displayphoto-shrink_200_200/0/1578354889004?e=2147483647&v=beta&t=WvwkJ9lozns_Fa3pH9GSAQ68StjBd5uU2sPPsDlK5p8"
+                      alt=""
+                    />
+                    <div class="flex flex-col">
+                      <p class="text-md font-medium">Franklin Tavarez</p>
+                      <span class="text-xs text-gray-500"
+                        >Front End Developer</span
+                      >
+                      <span class="text-xs text-gray-500">1m</span>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-icons-png.flaticon.com/512/2311/2311523.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-3 h-3"
+                      src="https://cdn-icons-png.flaticon.com/512/566/566013.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div>
+                  <span
+                    class="text-[#0A66C2] inline-block my-4 font-medium text-sm"
+                    >#Hiring #remote</span
+                  >
+                  <p class="text-sm text-gray-700">
+                    1.Front End Developer Internship<br />
+                    (15K - 30K) <br />
+                    2.Backend Developer <br />
+                    Internship (15K - 30K)<br />
+                    3.Fullstack Developer Internship <br />
+                    (stipend: 20K - 30K ) <br />
+                    Location: remote
+                  </p>
+                  <p class="mt-4 mb-4 text-sm">
+                    Apply Now:
+                    <span class="text-[#0A66C2] font-medium"
+                      >https://lnkd.in/ddsdwsGPzysa2tP</span
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <img
+                class="w-full"
+                src="https://imageio.forbes.com/specials-images/imageserve/63c077d70c2cc1a53653f99f/we-are-hiring--join-our-team--flat-vector-poster-or-banner-illustration-on-black/960x0.jpg?height=426&width=711&fit=bounds"
+                alt=""
+              />
+
+              <div class="p-3">
+                <div class="flex items-center gap-[2px] border-b pb-3">
+                  <div
+                    class="w-3 h-3 bg-[#66B2FF] flex items-center justify-center rounded-full"
+                  >
+                    <img
+                      class="flex items-center h-2"
+                      src="https://www.userflow.nl/images/Linkedin-Like-Icon-Thumbup500.png"
+                      alt=""
+                    />
+                  </div>
+                  <span class="text-gray-500 text-xs">400</span>
+                </div>
+                <div
+                  class="flex justify-between sm:justify-around items-center py-4 px-0 sm:p-6"
+                >
+                  <div class="flex items-center gap-2">
+                    <img
+                      class="w-4 h-4 sm:w-6 sm:h-6"
+                      src="./assets/images/like.png"
+                      alt=""
+                    /><span
+                      class="text-sm sm:text-base text-gray-700 font-medium"
+                      >Like</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      class="w-4 h-4 sm:w-6 sm:h-6"
+                      src="./assets/images/comment.png"
+                      alt=""
+                    /><span
+                      class="text-sm sm:text-base text-gray-700 font-medium"
+                      >Comment</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      class="w-4 h-4 sm:w-6 sm:h-6"
+                      src="./assets/images/repost.png"
+                      alt=""
+                    /><span
+                      class="text-sm sm:text-base text-gray-700 font-medium"
+                      >Repost</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      class="w-4 h-4 sm:w-6 sm:h-6"
+                      src="./assets/images/send.png"
+                      alt=""
+                    /><span
+                      class="text-sm sm:text-base text-gray-700 font-medium"
+                      >Send</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-10 h-10 rounded-full"
+                    src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                    alt=""
+                  />
+                  <div class="relative h-10 w-full flex items-center">
+                    <input
+                      class="border border-gray-400 outline-0 w-full h-full rounded-full pl-3"
+                      placeholder="Add a comment..."
+                      type="text"
+                    />
+                    <img
+                      class="absolute w-5 h-5 right-12"
+                      src="./assets/images/smile.png"
+                      alt=""
+                    />
+                    <img
+                      class="absolute w-6 h-6 right-3"
+                      src="./assets/images/galery.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- third section -->
+          <div class="hidden lg:flex flex-col w-1/3 gap-2">
+            <div class="rounded-md bg-[#fff] border p-3 space-y-3">
+              <h4 class="font-medium text-md">Add your feed</h4>
+              <div class="flex items-start gap-2">
+                <img
+                  class="rounded-full w-12 h-12"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-DW_HRN0h9p0HU7tkiKE4PiuryqmVH6X9w&s"
+                  alt=""
+                />
+                <div class="space-y-1">
+                  <h5 class="text-sm font-medium">Javascript Developer</h5>
+                  <p class="text-gray-500 text-xs">
+                    Company Software Developer
+                  </p>
+                  <button
+                    class="rounded-full border-black border-2 py-1 px-3 flex gap-2 items-center"
+                  >
+                    <img
+                      class="w-3 h-3"
+                      src="https://cdn-icons-png.flaticon.com/512/32/32339.png"
+                      alt=""
+                    />Follow
+                  </button>
+                </div>
+              </div>
+              <div class="flex items-start gap-2">
+                <img
+                  class="rounded-full w-12 h-12"
+                  src="https://www.svgrepo.com/show/303500/react-1-logo.svg"
+                  alt=""
+                />
+                <div class="space-y-1">
+                  <h5 class="text-sm font-medium">React Developer</h5>
+                  <p class="text-gray-500 text-xs">
+                    Company Software Developer
+                  </p>
+                  <button
+                    class="rounded-full border-black border-2 py-1 px-3 flex gap-2 items-center"
+                  >
+                    <img
+                      class="w-3 h-3"
+                      src="https://cdn-icons-png.flaticon.com/512/32/32339.png"
+                      alt=""
+                    />Follow
+                  </button>
+                </div>
+              </div>
+              <div class="flex items-start gap-2">
+                <img
+                  class="rounded-full w-12 h-12"
+                  src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
+                  alt=""
+                />
+                <div class="space-y-1">
+                  <h5 class="text-sm font-medium">Next.js Developer</h5>
+                  <p class="text-gray-500 text-xs">
+                    Company Software Developer
+                  </p>
+                  <button
+                    class="rounded-full border-black border-2 py-1 px-3 flex gap-2 items-center"
+                  >
+                    <img
+                      class="w-3 h-3"
+                      src="https://cdn-icons-png.flaticon.com/512/32/32339.png"
+                      alt=""
+                    />Follow
+                  </button>
+                </div>
+              </div>
+              <p class="text-sm font-medium text-gray-700">
+                View all Recomendation
+              </p>
+            </div>
+            <div>
+              <img
+                class="rounded-md w-full"
+                src="https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main section end -->
+      <!-- Chat start -->
+      <div
+        id="content"
+        class="hidden sm:flex flex-col fixed right-6 bottom-0 w-72 h-[580px] bg-white z-50 border rounded-md transition-translate duration-500"
+      >
+        <!-- chat heading -->
+        <div class="p-3 flex justify-between items-center border-b">
+          <div class="flex items-center gap-2">
+            <img
+              class="w-8 h-8 rounded-full"
+              src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+              alt=""
+            />
+            <h4 class="text-sm font-medium">Messaging</h4>
+          </div>
+          <div class="flex items-center gap-4">
+            <img class="w-4 h-4" src="./assets/images/more.png" alt="" />
+            <img class="w-4 h-4" src="./assets/images/edit.png" alt="" />
+            <img
+              id="toggle-down-arrow"
+              class="w-4 h-4 cursor-pointer"
+              src="./assets/images/down-arrow.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- chat search -->
+        <div class="p-3 relative">
+          <input
+            class="border bg-[#edf3f8] w-full py-1 px-8 outline-0 rounded-md"
+            type="text"
+            placeholder="Search messages"
+          />
+          <img
+            class="absolute left-6 bottom-5 w-4 h-4"
+            src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png"
+            alt=""
+          />
+          <img src="" alt="" />
+        </div>
+        <div class="flex justify-around py-4 border-b w-full">
+          <h4 class="text-sm font-medium text-[#01754f]">Focused</h4>
+          <h4 class="text-sm font-medium">Other</h4>
+        </div>
+        <div class="flex flex-col overflow-y-scroll h-[400px]">
+          <div class="p-3 flex items-center gap-2">
+            <img
+              class="w-12 h-12 rounded-full"
+              src="https://media.licdn.com/dms/image/C4D03AQHFot31JK1Rhw/profile-displayphoto-shrink_200_200/0/1578354889004?e=2147483647&v=beta&t=WvwkJ9lozns_Fa3pH9GSAQ68StjBd5uU2sPPsDlK5p8"
+              alt=""
+            />
+            <div class="flex flex-col border-b pb-2">
+              <div class="flex justify-between">
+                <h4>Franklin Tavarez</h4>
+                <span class="text-xs text-gray-500">Aug 2</span>
+              </div>
+              <p class="text-xs text-gray-500">
+                Hi there, Leyla! My name is Franklin from the LinkedIn Premium
+                team
+              </p>
+            </div>
+          </div>
+          <div class="p-3 flex items-center gap-2">
+            <img
+              class="w-12 h-12 rounded-full"
+              src="https://media.licdn.com/dms/image/C4D03AQHFot31JK1Rhw/profile-displayphoto-shrink_200_200/0/1578354889004?e=2147483647&v=beta&t=WvwkJ9lozns_Fa3pH9GSAQ68StjBd5uU2sPPsDlK5p8"
+              alt=""
+            />
+            <div class="flex flex-col border-b pb-2">
+              <div class="flex justify-between">
+                <h4>Franklin Tavarez</h4>
+                <span class="text-xs text-gray-500">Aug 2</span>
+              </div>
+              <p class="text-xs text-gray-500">
+                Hi there, Leyla! My name is Franklin from the LinkedIn Premium
+                team
+              </p>
+            </div>
+          </div>
+          <div class="p-3 flex items-center gap-2">
+            <img
+              class="w-12 h-12 rounded-full"
+              src="https://media.licdn.com/dms/image/C4D03AQHFot31JK1Rhw/profile-displayphoto-shrink_200_200/0/1578354889004?e=2147483647&v=beta&t=WvwkJ9lozns_Fa3pH9GSAQ68StjBd5uU2sPPsDlK5p8"
+              alt=""
+            />
+            <div class="flex flex-col border-b pb-2">
+              <div class="flex justify-between">
+                <h4>Franklin Tavarez</h4>
+                <span class="text-xs text-gray-500">Aug 2</span>
+              </div>
+              <p class="text-xs text-gray-500">
+                Hi there, Leyla! My name is Franklin from the LinkedIn Premium
+                team
+              </p>
+            </div>
+          </div>
+          <div class="p-3 flex items-center gap-2">
+            <img
+              class="w-12 h-12 rounded-full"
+              src="https://media.licdn.com/dms/image/C4D03AQHFot31JK1Rhw/profile-displayphoto-shrink_200_200/0/1578354889004?e=2147483647&v=beta&t=WvwkJ9lozns_Fa3pH9GSAQ68StjBd5uU2sPPsDlK5p8"
+              alt=""
+            />
+            <div class="flex flex-col border-b pb-2">
+              <div class="flex justify-between">
+                <h4>Franklin Tavarez</h4>
+                <span class="text-xs text-gray-500">Aug 2</span>
+              </div>
+              <p class="text-xs text-gray-500">
+                Hi there, Leyla! My name is Franklin from the LinkedIn Premium
+                team
+              </p>
+            </div>
+          </div>
+          <div class="p-3 flex items-center gap-2">
+            <img
+              class="w-12 h-12 rounded-full"
+              src="https://media.licdn.com/dms/image/C4D03AQHFot31JK1Rhw/profile-displayphoto-shrink_200_200/0/1578354889004?e=2147483647&v=beta&t=WvwkJ9lozns_Fa3pH9GSAQ68StjBd5uU2sPPsDlK5p8"
+              alt=""
+            />
+            <div class="flex flex-col border-b pb-2">
+              <div class="flex justify-between">
+                <h4>Franklin Tavarez</h4>
+                <span class="text-xs text-gray-500">Aug 2</span>
+              </div>
+              <p class="text-xs text-gray-500">
+                Hi there, Leyla! My name is Franklin from the LinkedIn Premium
+                team
+              </p>
+            </div>
+          </div>
+          <div class="p-3 flex items-center gap-2">
+            <img
+              class="w-12 h-12 rounded-full"
+              src="https://media.licdn.com/dms/image/C4D03AQHFot31JK1Rhw/profile-displayphoto-shrink_200_200/0/1578354889004?e=2147483647&v=beta&t=WvwkJ9lozns_Fa3pH9GSAQ68StjBd5uU2sPPsDlK5p8"
+              alt=""
+            />
+            <div class="flex flex-col border-b pb-2">
+              <div class="flex justify-between">
+                <h4>Franklin Tavarez</h4>
+                <span class="text-xs text-gray-500">Aug 2</span>
+              </div>
+              <p class="text-xs text-gray-500">
+                1Hi there, Leyla! My name is Franklin from the LinkedIn Premium
+                team
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- body end -->
+    <script>
+      const toggleDivs = document.querySelectorAll(".toggleDiv");
+      const toggleButton = document.getElementById("toggleButton");
+
+      toggleButton.addEventListener("click", () => {
+        const allHidden = Array.from(toggleDivs).every((div) =>
+          div.classList.contains("hidden")
+        );
+
+        toggleDivs.forEach((div) => {
+          if (allHidden) {
+            div.classList.remove("hidden");
+          } else {
+            div.classList.add("hidden");
+          }
+        });
+
+        toggleButton.textContent = allHidden ? "Show less" : "Show more";
+      });
+
+      const button = document.getElementById("toggle-down-arrow");
+      const content = document.getElementById("content");
+      let isCollapsed = true;
+      content.style.transform = "translateY(530px)";
+
+      button.addEventListener("click", () => {
+        if (isCollapsed) {
+          content.style.transform = "translateY(0)";
+          button.src = "./assets/images/down-arrow.png";
+        } else {
+          content.style.transform = "translateY(530px)";
+          button.src = "./assets/images/upload.png";
+        }
+        isCollapsed = !isCollapsed;
+      });
+    </script>
+  </body>
+</html>
